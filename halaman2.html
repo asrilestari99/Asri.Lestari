@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Keuangan Asri Lestari</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            overflow-x: hidden;
+
+            background: linear-gradient(270deg, pink, #ffd6f6, #fff);
+            background-size: 600% 600%;
+            animation: bgGerak 10s ease infinite;
+        }
+
+        @keyframes bgGerak {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        /* 🌸 bunga jatuh */
+        .flower, .love {
+            position: fixed;
+            font-size: 25px;
+            animation: jatuh linear infinite;
+        }
+
+        @keyframes jatuh {
+            0% { top: -10%; transform: rotate(0deg);}
+            100% { top: 110%; transform: rotate(360deg);}
+        }
+
+        /* banyak bunga */
+        .flower:nth-child(1){left:5%; animation-duration:8s;}
+        .flower:nth-child(2){left:15%; animation-duration:10s;}
+        .flower:nth-child(3){left:25%; animation-duration:7s;}
+        .flower:nth-child(4){left:35%; animation-duration:9s;}
+        .flower:nth-child(5){left:45%; animation-duration:6s;}
+        .flower:nth-child(6){left:55%; animation-duration:11s;}
+        .flower:nth-child(7){left:65%; animation-duration:8s;}
+        .flower:nth-child(8){left:75%; animation-duration:10s;}
+        .flower:nth-child(9){left:85%; animation-duration:7s;}
+        .flower:nth-child(10){left:95%; animation-duration:9s;}
+
+        /* banyak love */
+        .love:nth-child(11){left:10%; animation-duration:9s;}
+        .love:nth-child(12){left:20%; animation-duration:7s;}
+        .love:nth-child(13){left:30%; animation-duration:11s;}
+        .love:nth-child(14){left:40%; animation-duration:8s;}
+        .love:nth-child(15){left:50%; animation-duration:10s;}
+        .love:nth-child(16){left:60%; animation-duration:6s;}
+        .love:nth-child(17){left:70%; animation-duration:9s;}
+        .love:nth-child(18){left:80%; animation-duration:7s;}
+        .love:nth-child(19){left:90%; animation-duration:11s;}
+
+        h2 {
+            text-align: center;
+            color: deeppink;
+        }
+
+        .container {
+            background: rgba(255,255,255,0.9);
+            padding: 20px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px pink;
+            transition: 0.3s;
+        }
+
+        .container:hover {
+            transform: scale(1.02);
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #ff1493;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            border-radius: 10px;
+            border: 1px solid pink;
+        }
+
+        .btn {
+            margin-top: 15px;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            background: hotpink;
+            color: white;
+            cursor: pointer;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 15px;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid pink;
+        }
+
+        th {
+            background: pink;
+        }
+
+        td {
+            background: white;
+            text-align: center;
+        }
+
+        .menu-nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .menu-nav a {
+            margin: 5px;
+            padding: 10px 15px;
+            background: pink;
+            border-radius: 15px;
+            text-decoration: none;
+            color: deeppink;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 🌸 bunga -->
+    <div class="flower">🌸</div>
+    <div class="flower">🌼</div>
+    <div class="flower">🌺</div>
+    <div class="flower">🌷</div>
+    <div class="flower">🌸</div>
+    <div class="flower">🌼</div>
+    <div class="flower">🌺</div>
+    <div class="flower">🌷</div>
+    <div class="flower">🌸</div>
+    <div class="flower">🌼</div>
+
+    <!-- 💖 love -->
+    <div class="love">💖</div>
+    <div class="love">💗</div>
+    <div class="love">💘</div>
+    <div class="love">💕</div>
+    <div class="love">💞</div>
+    <div class="love">💓</div>
+    <div class="love">💗</div>
+    <div class="love">💖</div>
+    <div class="love">💘</div>
+
+    <h2>✨ Data Keuangan Asri Lestari ✨</h2>
+
+    <div class="container">
+        <h3>Data Demografi</h3>
+        <input value="Asri Lestari">
+        <input type="date" value="2004-07-27">
+        <textarea>Jl Perak, Tungkaran, Martapura</textarea>
+        <input value="081251609442">
+        <input value="asrilestari209@gmail.com">
+    </div>
+
+    <div class="container">
+        <h3>Data Bank</h3>
+        <input value="Asri Lestari">
+        <input value="BRI">
+        <input value="01800110512710">
+    </div>
+
+    <div class="container">
+        <h3>Data Transaksi</h3>
+        <input type="date" value="2026-07-27">
+        <input value="Bibit ikan arowana">
+        <input value="Debit">
+        <input value="5437911993759">
+
+        <table>
+            <tr>
+                <th>Tanggal</th>
+                <th>Uraian</th>
+                <th>Jenis</th>
+                <th>Debet</th>
+                <th>Kredit</th>
+            </tr>
+            <tr>
+                <td>27/07/2026</td>
+                <td>Bibit ikan arowana</td>
+                <td>Debit</td>
+                <td>5437911993759</td>
+                <td>-</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="menu-nav">
+        <a href="halaman1.html">⬅️ Tugas 1</a>
+        <a href="index.html">🏠 Home</a>
+    </div>
+
+</body>
+</html>
